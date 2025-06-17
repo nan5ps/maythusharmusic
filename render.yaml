@@ -1,11 +1,11 @@
 services:
   - type: worker
     name: maythushar1
-    env: python
+    env: docker
+    dockerfilePath: ./Dockerfile
     plan: pro plus
     region: singapore
     buildCommand: pip3 install --no-cache-dir --upgrade --requirement requirements.txt
-    startCommand: bash start
     envVars:
       - key: API_ID
         value: "20078321"
