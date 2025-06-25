@@ -6,7 +6,6 @@ services:
     plan: pro plus
     region: singapore
     buildCommand: pip3 install --no-cache-dir --upgrade --requirement requirements.txt
-    startCommand: gunicorn app:app & python3 -m maythusharmusic
     envVars:
       - key: API_ID
         value: "20078321"
