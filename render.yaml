@@ -1,9 +1,10 @@
 services:
   - type: worker
-    name: sasuke1
-    env: python
-    region: singapore
+    name: maythushar1
+    env: docker
+    dockerfilePath: ./Dockerfile
     plan: pro plus
+    region: singapore
     buildCommand: pip3 install --no-cache-dir --upgrade --requirement requirements.txt
     startCommand: gunicorn app:app & python3 -m maythusharmusic
     envVars:
