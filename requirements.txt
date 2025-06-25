@@ -3,6 +3,7 @@ aiofiles
 apscheduler
 aiohttp==3.9.3
 asyncio==3.4.3
+ffmpeg-python
 gTTS
 dnspython==2.3.0
 hachoir
@@ -25,7 +26,7 @@ python-dotenv
 pyyaml==6.0.1
 tgcrypto
 telegraph==2.2.0
-yt-dlp==2025.3.31
+yt-dlp==2025.5.22
 lexica-api==1.4.7
 httpx==0.25.2
 lyricsgenius
