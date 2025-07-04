@@ -8,7 +8,7 @@ from pyrogram.errors.exceptions.forbidden_403 import ChatWriteForbidden
 from maythusharmusic import app
 from config import LOGGER_ID
 from maythusharmusic.logging import LOGGER
-from Tune.utils.pastebin import TuneBin
+from Tune.utils.pastebin import HottyBin
 
 
 def split_limits(text):
@@ -31,7 +31,7 @@ def split_limits(text):
 
 async def send_large_error(text: str, caption: str, filename: str):
     try:
-        paste_url = await TuneBin(text)
+        paste_url = await HottyBin(text)
         if paste_url:
             await app.send_message(LOGGER_ID, f"{caption}\n\n🔗 Paste: {paste_url}")
             return
