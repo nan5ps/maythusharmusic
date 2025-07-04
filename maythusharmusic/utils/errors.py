@@ -8,7 +8,7 @@ from pyrogram.errors.exceptions.forbidden_403 import ChatWriteForbidden
 from maythusharmusic import app
 from config import LOGGER_ID
 from maythusharmusic.logging import LOGGER
-from Tune.utils.pastebin import HottyBin
+from maythusharmusic.utils.pastebin import HottyBin
 
 
 def split_limits(text):
